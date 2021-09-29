@@ -6,7 +6,8 @@
         "ramsey/uuid": "^4.2",
         "thingengineer/mysqli-database-class": "^2.9",
         "wohali/oauth2-discord-new": "^1.1",
-        "ramsey/uuid-doctrine": "^1.7"
+        "ramsey/uuid-doctrine": "^1.7",
+        "godruoyi/php-snowflake": "^1.1"
     },
     "license": "MIT",
     "autoload": {

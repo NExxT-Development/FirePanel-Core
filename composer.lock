@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "13de07b651fa66854700509af8c8d70d",
+    "content-hash": "8165f2279f26218114b49cb64d19da5c",
     "packages": [
         {
             "name": "brick/math",
@@ -410,6 +410,66 @@
                 }
             ],
             "time": "2020-05-29T18:28:51+00:00"
+        },
+        {
+            "name": "godruoyi/php-snowflake",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/godruoyi/php-snowflake.git",
+                "reference": "d8cbe72ed375b45033b7042e3d03340ce4fa479f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/godruoyi/php-snowflake/zipball/d8cbe72ed375b45033b7042e3d03340ce4fa479f",
+                "reference": "d8cbe72ed375b45033b7042e3d03340ce4fa479f",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Godruoyi\\Snowflake\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Godruoyi",
+                    "email": "g@godruoyi.com"
+                }
+            ],
+            "description": "An ID Generator for PHP based on Snowflake Algorithm (Twitter announced).",
+            "homepage": "https://github.com/godruoyi/php-snowflake",
+            "keywords": [
+                "Unique ID",
+                "laravel snowflake",
+                "order id",
+                "php snowflake",
+                "php unique id",
+                "snowflake algorithm",
+                "unique order id"
+            ],
+            "support": {
+                "issues": "https://github.com/godruoyi/php-snowflake/issues",
+                "source": "https://github.com/godruoyi/php-snowflake/tree/1.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://images.godruoyi.com/wechat.png",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/godruoyi",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-05-25T05:56:30+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
