@@ -1,0 +1,21 @@
+{
+    "name": "arch-development/fire-panel-core",
+    "description": "Code PHP code for FirePanel",
+    "type": "project",
+    "require": {
+        "ramsey/uuid": "^4.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ArchDevelopment\\FirePanelCore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "NWJ9PB",
+            "email": "helodibalado@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
