@@ -1,4 +1,4 @@
-# FirePanel-Core
+# SkyCore
 
 Code PHP code for SkyPanel
 
