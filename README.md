@@ -2,7 +2,7 @@
 
 Code PHP code for SkyPanel
 
-+ **This repository will only contains all backend codes for FirePanel | Please also read the commit description for in-depth descriptions of every commits**
++ **This repository will only contains all backend codes for SkyPanel | Please also read the commit description for in-depth descriptions of every commits**
 
 ## Webserver Requirements
 
