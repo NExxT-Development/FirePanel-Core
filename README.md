@@ -1,6 +1,6 @@
 # FirePanel-Core
 
-Code PHP code for FirePanel
+Code PHP code for SkyPanel
 
 + **This repository will only contains all backend codes for FirePanel | Please also read the commit description for in-depth descriptions of every commits**
 
