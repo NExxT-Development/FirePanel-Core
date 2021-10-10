@@ -1,17 +1,19 @@
 # SkyCore
 
-Core PHP code for SkyPanel
+Core PHP code for my projects that needs backend code, but you can setup this to work on your needs
 
-+ **This repository will only contains all backend codes for SkyPanel | Please also read the commit description for in-depth descriptions of every commits**
+## **This repository will only contains all backend codes for SkyPanel | Please also read the commit description for in-depth descriptions of every commits**
 
-## Webserver Requirements
+## Requirements
 
-+ Apache    *`NGINX will have no support until someone will help me create a nginx counterpart of the htaccess`*
-+ PHP 8     *`and above`*
-+ MariaDB *`latest as possible`*
+| Requirements |   Type  |     Version    |
+|:------------:|:-------:|:--------------:|
+|   Webserver  |  Apache |     2.4.48     |
+|      PHP     |         |  8.0.9/latest  |
+|   Database   | MariaDB | 10.4.20/latest |
+|   Composer   |         |  2.1.6/latest  |
+|              |         |                |
 
 ## Pre-requisites
 
-+ Install the dependencies required by this project *`composer -i`*
-+ And go to `/settings/config.php` and fill out the placeholders with your own data
-+ *`more documentation coming soon™️`*
++ Removed until proper documentation is established
