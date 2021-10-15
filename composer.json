@@ -8,7 +8,11 @@
         "wohali/oauth2-discord-new": "^1.1",
         "ramsey/uuid-doctrine": "^1.7",
         "godruoyi/php-snowflake": "^1.1",
-        "symfony/uid": "^5.3"
+        "symfony/uid": "^5.3",
+        "symfony/security-csrf": "^5.3",
+        "symfony/form": "^5.3",
+        "symfony/filesystem": "^5.3",
+        "symfony/rate-limiter": "^5.3"
     },
     "license": "MIT",
     "autoload": {
