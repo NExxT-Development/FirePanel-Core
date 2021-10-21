@@ -20,13 +20,11 @@ function getUserIP() {
 }
 
 function randbytes($len = 32, $cap = TRUE) {
-if($cap == TRUE){
+if($cap){
     $randbytes = strtoupper(bin2hex(random_bytes($len)));
 } else {
     $randbytes = bin2hex(random_bytes($len));
 }
 return $randbytes;
 }
-
-
 ?>
