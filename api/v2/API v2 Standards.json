@@ -1,0 +1,21 @@
+{
+	"title": "SkyCore API Output Structure Standard v2",
+	"request": {
+		"request_Status": {
+			"status_result_http":			"200",
+			"status_result_httpCode":		"OK"
+		},
+		"request_Output": {
+			"time_snowflake": 				"101101010001010101"
+		},
+		"request_Origin": {
+			"origin_ip":					"SaltedSHA1(ip)",
+			"origin_OpenSessionID":			"NDOpenSessionStandard"
+		},
+		"request_Reference": {
+			"reference_ULID":				"01FKM8RMTC6ZSZWK9BQYHEQ699",
+			"reference_InternalTraceID":	"3EC2DD6DB15AC9FAB9B67F8D314990E67165139F6077543E5F192E24B59A671863FE4B230EE4F13571A5E0E774E67C4E",
+			"reference_SupportID":			"A93A3D1A48D04F289C74E2D088351F53111395190157082624"
+		}
+	}
+}
