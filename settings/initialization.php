@@ -4,6 +4,7 @@ require('config.php');
 
 // Start Session
 session_name('S_TOKEN');
+session_name('FLAP_ID');
 session_start();
 
 // Snowflake
