@@ -1,8 +1,6 @@
 <?php
 function getOriginIP($hash = FALSE) {
-    //? Load Global Variables
     require('variables.php');
-    
     if (isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
         $_SERVER['REMOTE_ADDR'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
         $_SERVER['HTTP_CLIENT_IP'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
@@ -20,7 +18,7 @@ function getOriginIP($hash = FALSE) {
         $ip = $remote;
     }
     if ($hash !== FALSE) {
-        return(sha1($ip . $SALTVALUE1));
+        return sha1($ip . SALTVALUE_1);
     } else {
         return $ip;
     }
