@@ -1,1 +1,1 @@
-{"commit":"6be101a","subject":"Replace `$foobar` to `define()`","date":"Fri, 5 Nov 2021 20:05:08 +0800","author":"NWJ9PB"}
+{"commit":"6095241","subject":"Fix `autoload` and `initializer` path","date":"Sat, 6 Nov 2021 21:35:00 +0800","author":"NWJ9PB"}
