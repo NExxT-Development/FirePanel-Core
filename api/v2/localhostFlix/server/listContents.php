@@ -1,8 +1,8 @@
 <?php
 // Load Essential loader
 
-require ('../vendor/autoload.php');
-require ('../settings/initialization.php');
+require '../../../../vendor/autoload.php';
+require '../../../../settings/initialization.php';
 ?>
 <?php
 
