@@ -8,12 +8,6 @@ allowMethod('GET');
 
 ?>
 <?php
-//TODO: Set persistent data on headers
-header('SkyServer_Server_Time: ' . date('c'));
-header('SkyServer_Server_ID: ' . 'DA5C708F-4EB6-4F4D-9C79-3E5D93FA71AC');
-header('SkyServer_Client_IP: ' . strtoupper(getOriginIP(TRUE)));
-header('SkyServer_Transaction_ULID: ' . $ulid);
-header('SkyServer_Transaction_SF: ' . $snowflake->id());
 
 //? JSON Output
 $json   = new stdClass();
