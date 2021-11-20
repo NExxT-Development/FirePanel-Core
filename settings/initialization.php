@@ -1,6 +1,10 @@
 <?php
+require('variables.php');
 require('functions.php');
 require('config.php');
+
+// Declare content type as text/json
+header("content-type: application/json");
 
 // Start Session
 session_name('S_TOKEN');
@@ -22,4 +26,11 @@ $ulid = new Ulid();
 // Exploded UUIDv4
 $uid = explode("-", $uuid);
 $euuid = $uid['0'] . $uid['1'] . $uid['2'] . $uid['3'] . $uid['4'];
+
+// Send persistend data over http headers
+header('SkyServer_Server_Time: ' . date('c'));
+header('SkyServer_Server_ID: ' . 'DA5C708F-4EB6-4F4D-9C79-3E5D93FA71AC');
+header('SkyServer_Client_IP: ' . strtoupper(getOriginIP(TRUE)));
+header('SkyServer_Transaction_ULID: ' . $ulid);
+header('SkyServer_Transaction_SF: ' . $snowflake->id());
 

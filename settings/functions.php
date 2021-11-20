@@ -1,6 +1,5 @@
 <?php
 function getOriginIP($hash = FALSE) {
-    require('variables.php');
     if (isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
         $_SERVER['REMOTE_ADDR'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
         $_SERVER['HTTP_CLIENT_IP'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
@@ -31,5 +30,31 @@ if($cap){
     $randbytes = bin2hex(random_bytes($len));
 }
 return $randbytes;
+}
+
+function checkMethod() {
+    $method = $_SERVER['REQUEST_METHOD'];
+    if($method == 'GET'){
+        return 'GET';
+    }
+}
+
+function allowMethod($request) {
+    $reqMethod = $_SERVER['REQUEST_METHOD'];
+    if($reqMethod != $request){
+        $json   = new stdClass();
+
+        $json    = [
+            "request"   => [
+                "request_Status"        => [
+                    "status_result"             =>      '405',
+                    "status_result_code"        =>      'REQUEST_NOT_ALLOWED',
+                ]
+            ]
+        ];
+
+        $json_out = json_encode($json, JSON_PRETTY_PRINT);
+        exit($json_out);
+    }
 }
 ?>
