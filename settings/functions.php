@@ -42,7 +42,6 @@ function checkMethod() {
 function allowMethod($request) {
     $reqMethod = $_SERVER['REQUEST_METHOD'];
     if($reqMethod != $request){
-        $json   = new stdClass();
 
         $json    = [
             "request"   => [
@@ -57,4 +56,20 @@ function allowMethod($request) {
         exit($json_out);
     }
 }
+
+function errorMessage($code, $msg) {
+
+    $json    = [
+        "request"   => [
+            "request_Status"        => [
+                "status_result"             =>      $code,
+                "status_result_code"        =>      $msg,
+            ]
+        ]
+    ];
+
+    $json_out = json_encode($json, JSON_PRETTY_PRINT);
+    exit($json_out);
+}
+
 ?>
