@@ -31,6 +31,6 @@ $euuid = $uid['0'] . $uid['1'] . $uid['2'] . $uid['3'] . $uid['4'];
 header('SkyServer_Server_Time: ' . date('c'));
 header('SkyServer_Server_ID: ' . 'DA5C708F-4EB6-4F4D-9C79-3E5D93FA71AC');
 header('SkyServer_Client_IP: ' . strtoupper(getOriginIP(TRUE)));
-header('SkyServer_Transaction_ULID: ' . $ulid);
-header('SkyServer_Transaction_SF: ' . $snowflake->id());
+header('SkyServer_Reference_ULID: ' . $ulid);
+header('SkyServer_Reference_SF: ' . $snowflake->id());
 
