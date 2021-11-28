@@ -3,6 +3,7 @@
 require('../../../../vendor/autoload.php');
 require('../../../../settings/initialization.php');
 
+$router = new League\Route\Router;
 // Page Settings
 allowMethod('GET');
 
@@ -12,6 +13,28 @@ errorMessage('404', 'LINK EXPIRED');
 <?php
 
 //! Implementing PHP `attributes` function, a alternative to `route` of symfony
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 $json   = [
     'request' => [
