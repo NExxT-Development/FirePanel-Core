@@ -14,7 +14,7 @@
         "symfony/filesystem": "^5.3",
         "symfony/rate-limiter": "^5.3",
         "sebastian/version": "^3.0",
-        "doctrine/annotations": "^1.13"
+        "league/route": "^5.1"
     },
     "license": "MIT",
     "autoload": {
