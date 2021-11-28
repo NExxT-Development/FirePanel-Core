@@ -6,12 +6,13 @@ require('../../../../settings/initialization.php');
 // Page Settings
 allowMethod('GET');
 
+errorMessage('404', 'LINK EXPIRED');
+
 ?>
 <?php
 
 //! Implementing PHP `attributes` function, a alternative to `route` of symfony
-/* $json   = new stdClass();
-
+/*
 $json   = [
     'request' => [
         "request_Status"        => [
